@@ -1,6 +1,7 @@
 package study.core.board.service.impl;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import study.core.board.domain.entity.Post;
@@ -13,6 +14,7 @@ import study.core.board.service.BoardService;
 @Service
 @Transactional
 @RequiredArgsConstructor
+@Primary
 public class BoardServiceImpl implements BoardService {
     private final BoardRepository boardRepository;
 
